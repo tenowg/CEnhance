@@ -30,13 +30,13 @@
 <a class="jxr_linenumber" name="20" href="#20">20</a>  
 <a class="jxr_linenumber" name="21" href="#21">21</a>  	<em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="22" href="#22">22</a>  <em class="jxr_javadoccomment">	 * Provides an example command that can be issued to the Spout server.</em>
-<a class="jxr_linenumber" name="23" href="#23">23</a>  <em class="jxr_javadoccomment">	 * @param source CommandSource</em>
-<a class="jxr_linenumber" name="24" href="#24">24</a>  <em class="jxr_javadoccomment">	 * @param args CommandArguments</em>
-<a class="jxr_linenumber" name="25" href="#25">25</a>  <em class="jxr_javadoccomment">	 * @throws CommandException</em>
+<a class="jxr_linenumber" name="23" href="#23">23</a>  <em class="jxr_javadoccomment">	 * @param source CommandSource source of the Command</em>
+<a class="jxr_linenumber" name="24" href="#24">24</a>  <em class="jxr_javadoccomment">	 * @param args CommandArguments arguments for the Command</em>
+<a class="jxr_linenumber" name="25" href="#25">25</a>  <em class="jxr_javadoccomment">	 * @throws CommandException Exception if command fails</em>
 <a class="jxr_linenumber" name="26" href="#26">26</a>  <em class="jxr_javadoccomment">	 */</em>
 <a class="jxr_linenumber" name="27" href="#27">27</a>  	@CommandDescription(aliases = { <span class="jxr_string">"command"</span>, <span class="jxr_string">"cmd"</span> }, desc = <span class="jxr_string">"This is an example of what a command might look like. Try it out with /cmd !"</span>)
 <a class="jxr_linenumber" name="28" href="#28">28</a>  	@Permissible(<span class="jxr_string">"CEnhance.some.permission"</span>)
-<a class="jxr_linenumber" name="29" href="#29">29</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> exampleCommand(CommandSource source, CommandArguments args) <strong class="jxr_keyword">throws</strong> CommandException {
+<a class="jxr_linenumber" name="29" href="#29">29</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> exampleCommand(<strong class="jxr_keyword">final</strong> CommandSource source, <strong class="jxr_keyword">final</strong> CommandArguments args) <strong class="jxr_keyword">throws</strong> CommandException {
 <a class="jxr_linenumber" name="30" href="#30">30</a>  		<em class="jxr_comment">// Calling this command will send whoever issued it the message below.</em>
 <a class="jxr_linenumber" name="31" href="#31">31</a>  		source.sendMessage(<span class="jxr_string">"The CEnhance plugin command has been successfully issued."</span>);
 <a class="jxr_linenumber" name="32" href="#32">32</a>  	}
