@@ -1,7 +1,5 @@
 package com.thedemgel.cenhance.configuration;
 
-import java.io.File;
-import java.util.logging.Level;
 import org.spout.cereal.config.ConfigurationException;
 import org.spout.cereal.config.ConfigurationHolder;
 import org.spout.cereal.config.ConfigurationHolderConfiguration;
@@ -20,7 +18,7 @@ public class CEnhanceConfiguration extends ConfigurationHolderConfiguration {
 	// Messages
 	public static final ConfigurationHolder SOME_SETTING = new ConfigurationHolder("SomeSetting", "some", "setting");
 
-	public CEnhanceConfiguration(File dataFolder) {
+	public CEnhanceConfiguration(final File dataFolder) {
 		super(new YamlConfiguration(new File(dataFolder, "config.yml")));
 	}
 

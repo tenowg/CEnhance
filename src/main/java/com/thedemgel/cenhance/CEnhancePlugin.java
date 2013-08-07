@@ -15,7 +15,7 @@ public class CEnhancePlugin extends Plugin {
 	private CEnhanceConfiguration config;
 
 	@Override
-	public void onLoad() {
+	public final void onLoad() {
 		setInstance(this);
 		config = new CEnhanceConfiguration(getDataFolder());
 		config.load();
@@ -23,7 +23,7 @@ public class CEnhancePlugin extends Plugin {
 	}
 
 	@Override
-	public void onEnable() {
+	public final void onEnable() {
 		// Register Base Command (/command)
 		AnnotatedCommandExecutorFactory.create(new CEnhanceBaseCommand(this));
 		// Register Commands under Base Command (/command command)
@@ -36,11 +36,11 @@ public class CEnhancePlugin extends Plugin {
 	}
 
 	@Override
-	public void onDisable() {
+	public final void onDisable() {
 		getLogger().info("disabled.");
 	}
 
-	private static void setInstance(CEnhancePlugin plugin) {
+	private static void setInstance(final CEnhancePlugin plugin) {
 		instance = plugin;
 	}
 
@@ -48,7 +48,7 @@ public class CEnhancePlugin extends Plugin {
 		return instance;
 	}
 
-	public CEnhanceConfiguration getConfig() {
+	public final CEnhanceConfiguration getConfig() {
 		return config;
 	}
 }

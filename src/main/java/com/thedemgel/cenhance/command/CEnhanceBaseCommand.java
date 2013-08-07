@@ -15,17 +15,19 @@ import com.thedemgel.cenhance.CEnhancePlugin;
 public class CEnhanceBaseCommand {
 	private final CEnhancePlugin plugin;
 
-	public CEnhanceBaseCommand(CEnhancePlugin instance) {
+	public CEnhanceBaseCommand(final CEnhancePlugin instance) {
 		this.plugin = instance;
 	}
 
 	/**
 	 * Provides an example command that can be issued to the Spout server.
+	 * @param source CommandSource
+	 * @param args CommandArguments
+	 * @throws CommandException
 	 */
-	@CommandDescription(aliases = {"command", "cmd"}, desc = "This is an example of what a command might look like. Try it out with /cmd !")
+	@CommandDescription(aliases = { "command", "cmd" }, desc = "This is an example of what a command might look like. Try it out with /cmd !")
 	@Permissible("CEnhance.some.permission")
 	public void exampleBaseCommand(CommandSource source, CommandArguments args) throws CommandException {
-		
 		// Calling this command will send whoever issued it the message below.
 		source.sendMessage("The CEnhance plugin base command has been successfully issued. (Type a sub-command)");
 	}

@@ -8,14 +8,14 @@ import org.spout.api.event.Listener;
  * Provides an example of an event listener class.
  */
 public class CEnhanceListener implements Listener {
-	private CEnhancePlugin plugin;
+	private final CEnhancePlugin plugin;
 
-	public CEnhanceListener(CEnhancePlugin instance) {
+	public CEnhanceListener(final CEnhancePlugin instance) {
 		this.plugin = instance;
 	}
-	
+
 	@EventHandler
-	public void onPlayerChat(PlayerChatEvent event) {
+	public void onPlayerChat(final PlayerChatEvent event) {
 		// Do Something on PlayerChatEvent
 	}
 }
