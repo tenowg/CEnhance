@@ -20,13 +20,13 @@ public class CEnhanceCommands {
 
 	/**
 	 * Provides an example command that can be issued to the Spout server.
-	 * @param source CommandSource
-	 * @param args CommandArguments
-	 * @throws CommandException
+	 * @param source CommandSource source of the Command
+	 * @param args CommandArguments arguments for the Command
+	 * @throws CommandException Exception if command fails
 	 */
 	@CommandDescription(aliases = { "command", "cmd" }, desc = "This is an example of what a command might look like. Try it out with /cmd !")
 	@Permissible("CEnhance.some.permission")
-	public void exampleCommand(CommandSource source, CommandArguments args) throws CommandException {
+	public final void exampleCommand(final CommandSource source, final CommandArguments args) throws CommandException {
 		// Calling this command will send whoever issued it the message below.
 		source.sendMessage("The CEnhance plugin command has been successfully issued.");
 	}

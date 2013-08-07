@@ -8,7 +8,7 @@
 		<name>
 			${project.artifactId}
 		</name>
-		<href>${project.scm.url}</href>
+		<href>${project.url}</href>
 	</bannerLeft>
 	<publishDate position="bottom" format="yyyy-MM-dd" />
 	<version position="bottom" />
@@ -25,14 +25,14 @@
 				<name>
 					${project.artifactId}
 				</name>
-				<href>${project.scm.url}</href>
+				<href>${project.url}</href>
 			</brand>
 			<slogan>${project.description}</slogan>
 			<titleTemplate>%2$s | %1$s</titleTemplate>
 			<toc>top</toc>
 			<topNav>Main|Documentation|reports</topNav>
 			<bottomNav>
-				<column>Main</column>
+				<column>Main|Contribute</column>
 				<column>Documentation</column>
 				<column>reports|modules</column>
 			</bottomNav>
@@ -46,10 +46,10 @@
 					<toc>false</toc>
 					<sections>
 						<carousel />
-						<body />
-						<sidebar />
-						<thumbs>2</thumbs>
-						<columns>3</columns>
+						<!-- <body /> -->
+						<!-- <sidebar /> -->
+						<!-- <thumbs>2</thumbs> -->
+						<columns>2</columns>
 					</sections>
 				</index>
 				<developer-info>

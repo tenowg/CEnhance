@@ -9,7 +9,7 @@
 	<name>CEnhance</name>
 	<url>http://maven.apache.org</url>
 	<inceptionYear>2013</inceptionYear>
-	<description>Set your description here.</description>
+	<description>CEnhance - Character Enhancement for Spout Server</description>
     
 	<developers>
 		<developer>
@@ -38,6 +38,16 @@
 		<tag>HEAD</tag>
 		<url>https://github.com/tenowg/CEnhance</url>
 	</scm>
+	
+	<ciManagement>
+		<system>Jenkins (CloudBees)</system>
+		<url>https://tenowg.ci.cloudbees.com/job/CEnhance/</url>
+	</ciManagement>
+	
+	<issueManagement>
+		<system>GitHub Issues Page</system>
+		<url>https://github.com/tenowg/CEnhance/issues</url>
+	</issueManagement>
 
 	<!-- Build properties -->
 	<properties>
@@ -231,8 +241,7 @@
 							<report>distribution-management</report>
 							<report>index</report>
 							<report>issue-tracking</report>
-							<report>license</report>
-							<report>mailing-list</report>
+							<!-- <report>license</report> -->
 							<report>project-team</report>
 							<report>scm</report>
 							<report>summary</report>
@@ -246,18 +255,8 @@
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.5.2</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
 				<version>2.5.2</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>javancss-maven-plugin</artifactId>
-				<version>2.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
