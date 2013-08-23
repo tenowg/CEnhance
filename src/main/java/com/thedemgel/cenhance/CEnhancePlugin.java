@@ -8,7 +8,45 @@ import com.thedemgel.cenhance.command.CEnhanceCommands;
 import com.thedemgel.cenhance.configuration.CEnhanceConfiguration;
 
 /**
- * Defines the main class of the plugin.
+ * Define structure of Skill/Abilty/Effect search.
+ * 
+ * Use Annotations to get passive modifiers for Skills/Abilities/Effects
+ * 
+ * Modifiers
+ *   Effects/Skills/Abilities can add to Modifiers list.
+ *   ConcurrentMap (Modified (Class), ConcurrentMap(modifierId, modifier)
+ *   When skill is added, look for @Modifier on Modifier fields
+ *   when skill is removed, reverse process
+ * 
+ *   Events fired on addition/removal of Modifiers/Skills/Effects
+ * 
+ *   ModifierHandler
+ * 
+ *   Modifier class
+ *     modifierId = UUID or Long
+ *     One method (modify) - returns Object with proper modifier
+ * 
+ * Effects can stack: options
+ *   Effect container - map and sorted list
+ *     Sorted List is descending from time left of effect
+ *     Map effectid/Effect - effectid = UUID or Long
+ * 
+ *   Effect Object
+ *     stack = how much it can stack (default)
+ *     getpossiblestack will calculate stack amount possible at moment
+ *     execute will perform the effect
+ * 
+ * Skills Cannot be stacked
+ *   Map skillid/Skill - skillid = UUID or Long
+ * 
+ *   Skill Object
+ *     Cooldown = long milliseconds
+ *     execute will perform the skill.
+ * 
+ *   Skills can add passive Modifiers, or active Effects
+ * 
+ * Map (TypeofAbility (Enum?)/Map("stringid"/Ability-Skill))
+ *   Type is Class Annotation and stringid is class annotation
  */
 public class CEnhancePlugin extends Plugin {
 	private static CEnhancePlugin instance;
