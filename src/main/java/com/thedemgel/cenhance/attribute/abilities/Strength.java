@@ -22,6 +22,7 @@ public class Strength extends Skill {
 	
 	@Value
 	private Double value;
+	private String nothing;
 	
 	@Override
 	public final Double mod(Modifier modifier) {
