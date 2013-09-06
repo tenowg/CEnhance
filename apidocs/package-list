@@ -1,3 +1,10 @@
 com.thedemgel.cenhance
+com.thedemgel.cenhance.annotation
+com.thedemgel.cenhance.attribute
+com.thedemgel.cenhance.attribute.abilities
 com.thedemgel.cenhance.command
+com.thedemgel.cenhance.component
 com.thedemgel.cenhance.configuration
+com.thedemgel.cenhance.event
+com.thedemgel.cenhance.modifier
+com.thedemgel.cenhance.modifier.modifiers
