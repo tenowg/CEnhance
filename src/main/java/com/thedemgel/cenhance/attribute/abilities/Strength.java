@@ -11,11 +11,12 @@ import com.thedemgel.cenhance.annotation.Value;
 import com.thedemgel.cenhance.modifier.Modifier;
 import com.thedemgel.cenhance.modifier.modifiers.Speed;
 import com.thedemgel.cenhance.attribute.Skill;
+import com.thedemgel.cenhance.modifier.SingleModifierContainer;
 
 /**
  * Basic Strength Attribute.
  */
-@Ability(type = AbilityType.ATTRIBUTE, name = "attribute-strength")
+@Ability(type = AbilityType.ATTRIBUTE, name = "attribute-strength", container = SingleModifierContainer.class)
 @ModifierType({Speed.class})
 public class Strength extends Skill {
 	
