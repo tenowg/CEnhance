@@ -122,7 +122,7 @@
                   0
                 </td>
                 <td>
-                  2
+                  3
                 </td>
               </tr>
                           <tr>
@@ -169,20 +169,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.attribute.Skill.java">com/thedemgel/cenhance/attribute/Skill.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  13
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.event.AddSkillEvent.java">com/thedemgel/cenhance/event/AddSkillEvent.java</a>
                 </td>
                 <td>
@@ -193,6 +179,20 @@
                 </td>
                 <td>
                   23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.attribute.Skill.java">com/thedemgel/cenhance/attribute/Skill.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
                 </td>
               </tr>
                           <tr>
@@ -220,12 +220,26 @@
                   0
                 </td>
                 <td>
-                  2
+                  1
                 </td>
               </tr>
                           <tr>
                 <td>
                   <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.modifier.ModifierHandler.java">com/thedemgel/cenhance/modifier/ModifierHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.modifier.SingleModifierContainer.java">com/thedemgel/cenhance/modifier/SingleModifierContainer.java</a>
                 </td>
                 <td>
                   0
@@ -248,21 +262,7 @@
                   0
                 </td>
                 <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.modifier.SingleModifierContainer.java">com/thedemgel/cenhance/modifier/SingleModifierContainer.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
+                  12
                 </td>
               </tr>
                           <tr>
@@ -290,7 +290,7 @@
                   0
                 </td>
                 <td>
-                  3
+                  4
                 </td>
               </tr>
                           <tr>
