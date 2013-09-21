@@ -94,7 +94,7 @@
                   0
                 </td>
                 <td>
-                  3
+                  2
                 </td>
               </tr>
                           <tr>
@@ -108,7 +108,7 @@
                   0
                 </td>
                 <td>
-                  5
+                  4
                 </td>
               </tr>
                           <tr>
@@ -136,7 +136,7 @@
                   0
                 </td>
                 <td>
-                  2
+                  3
                 </td>
               </tr>
                           <tr>
@@ -164,7 +164,7 @@
                   0
                 </td>
                 <td>
-                  3
+                  4
                 </td>
               </tr>
                           <tr>
@@ -239,20 +239,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.attribute.Attribute.java">com/thedemgel/cenhance/attribute/Attribute.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.modifier.SingleModifierContainer.java">com/thedemgel/cenhance/modifier/SingleModifierContainer.java</a>
                 </td>
                 <td>
@@ -263,6 +249,20 @@
                 </td>
                 <td>
                   2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#com.thedemgel.cenhance.attribute.Attribute.java">com/thedemgel/cenhance/attribute/Attribute.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
                 </td>
               </tr>
                           <tr>
